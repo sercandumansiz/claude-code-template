@@ -2,7 +2,7 @@
 name: my-skill
 description: <!-- CUSTOMIZE: What this skill does and when Claude should use it. Claude uses this to decide when to load it automatically. -->
 # argument-hint: [arg1] [arg2]
-# disable-model-invocation: true
+# disable-model-invocation: true  # true = human must invoke via /skill; false/omit = LLM decides when to load
 # user-invocable: false
 # allowed-tools: Read, Grep, Glob
 # model: sonnet
