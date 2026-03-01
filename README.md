@@ -27,16 +27,13 @@ starter-template/
 ├── CLAUDE.local.md            Personal overrides
 ├── .mcp.json                  MCP server connections
 ├── gitignore                  Gitignore template
-├── .claude/
-│   ├── settings.json          Permissions and environment
-│   ├── settings.local.json    Personal permission overrides
-│   ├── skills/                Skill template
-│   ├── rules/                 Rule template
-│   ├── agents/                Subagent template
-│   └── hooks/                 Hook script template
-└── .github/
-    └── workflows/
-        └── claude.yml         GitHub Actions workflow template
+└── .claude/
+    ├── settings.json          Permissions and environment
+    ├── settings.local.json    Personal permission overrides
+    ├── skills/                Skill template
+    ├── rules/                 Rule template
+    ├── agents/                Subagent template
+    └── hooks/                 Hook script template
 ```
 
 | File | What It Provides |
@@ -51,7 +48,6 @@ starter-template/
 | [`CLAUDE.local.md`](starter-template/CLAUDE.local.md) | Personal project overrides |
 | [`.claude/settings.local.json`](starter-template/.claude/settings.local.json) | Personal permission overrides |
 | [`gitignore`](starter-template/gitignore) | Gitignore template (copy as `.gitignore`) |
-| [`.github/workflows/claude.yml`](starter-template/.github/workflows/claude.yml) | GitHub Actions workflow for Claude Code automation |
 
 ## Configuration Levels
 
