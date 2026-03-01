@@ -1,0 +1,49 @@
+# <!-- CUSTOMIZE: Rename this file and adjust triggers for your project -->
+name: Claude Code
+
+# <!-- CUSTOMIZE: Choose which events trigger Claude Code.
+#   Common patterns:
+#   - @claude mention in issues/PRs (interactive, works with Copilot Pro+)
+#   - Issue creation with specific labels (automation)
+#   - workflow_dispatch for manual triggering from Actions tab
+#   - repository_dispatch for API-based triggering (curl, Shortcuts, etc.) -->
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  # <!-- CUSTOMIZE: Uncomment for manual triggering from Actions tab -->
+  # workflow_dispatch:
+  #   inputs:
+  #     prompt:
+  #       description: "What should Claude do?"
+  #       required: true
+  #       type: string
+
+jobs:
+  claude:
+    # <!-- CUSTOMIZE: Adjust the condition for your trigger pattern -->
+    if: >-
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          # <!-- CUSTOMIZE: Use ANTHROPIC_API_KEY for Claude Code Action,
+          #   or remove this line if using Copilot's built-in Claude -->
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          trigger_phrase: "@claude"
+          # <!-- CUSTOMIZE: Uncomment to set custom instructions or limits -->
+          # prompt: "Your custom instructions here"
+          # claude_args: "--max-turns 10"

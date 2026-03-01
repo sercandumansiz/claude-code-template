@@ -1,0 +1,28 @@
+name: Track Update
+description: Trigger the track-update pipeline with a URL. Works great from mobile.
+title: "track: "
+labels: ["track-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste a URL about Claude Code updates or AI developments.
+        The pipeline will automatically analyze, evaluate, and implement if relevant.
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: The URL to analyze
+      placeholder: "https://example.com/article-about-claude-code"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Optional context or specific areas to focus on
+      placeholder: "Focus on the new hooks API changes"
+    validations:
+      required: false

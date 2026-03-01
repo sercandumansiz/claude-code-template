@@ -1,0 +1,47 @@
+# ==============================================
+# Claude Code - Local/Personal Files
+# ==============================================
+# These files contain personal preferences and
+# machine-specific settings. NEVER commit them.
+# ==============================================
+
+# Personal project instruction overrides
+CLAUDE.local.md
+!starter-template/CLAUDE.local.md
+
+# Personal settings overrides
+.claude/settings.local.json
+!starter-template/.claude/settings.local.json
+
+# Personal MCP server configuration
+.mcp.json
+!starter-template/.mcp.json
+
+# Local agent memory (personal, not shared)
+.claude/agent-memory-local/
+
+# Worktree directories (created by subagent isolation)
+.claude/worktrees/
+
+# ==============================================
+# Environment & Secrets
+# ==============================================
+.env
+.env.local
+.env.*.local
+secrets/
+
+# ==============================================
+# OS
+# ==============================================
+.DS_Store
+Thumbs.db
+
+# ==============================================
+# Editors
+# ==============================================
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.idea/
