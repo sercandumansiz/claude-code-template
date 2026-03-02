@@ -15,6 +15,7 @@ No build step required. This is a documentation and template project.
 - `starter-template/CLAUDE.md` must stay under 200 lines (root CLAUDE.md can grow as needed)
 - JSON files must be valid (no trailing commas, no comments)
 - Markdown files must use consistent heading hierarchy (h1 → h2 → h3)
+- Do not use em dashes (—) in guidance or instruction text. Use clear and complete sentences instead of formats like "guidance — open" or "instructions — loaded"
 - Follow existing patterns in the repository
 
 ## Verification
