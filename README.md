@@ -1,8 +1,8 @@
 # Claude Code Template
 
-This repository provides a starter template for configuring Claude Code with well-structured project instructions, skills, rules, agents, and hooks. The `starter-template/` directory contains ready-to-use configuration files that you can copy into your projects.
+This repository provides a starter template for configuring Claude Code with well-structured [building blocks](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#building-blocks). The [`starter-template/`](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#starter-template) directory contains ready-to-use configuration files that you can copy into your projects.
 
-This project serves as both a Proof of Concept and a Living Reference. It uses the same `starter-template/` configuration as its own operational setup. An automated pipeline continuously evaluates improvements and best practices, updating the template to maintain alignment with current standards.
+This project serves as both a Proof of Concept and a [Living Reference](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#living-reference). It uses the same [`starter-template/`](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#starter-template) configuration as its own operational setup. An automated pipeline continuously evaluates improvements and best practices, updating the template to maintain alignment with current standards. The agents are fully grounded in and generated from [official sources](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#official-sources).
 
 ## Building Blocks
 
