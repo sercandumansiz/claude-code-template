@@ -127,3 +127,12 @@ Built from the official Claude Code documentation:
 - [Effective CLAUDE.md](https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md)
 - [The Complete Guide to Building Skills](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en)
 - [Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html)
+
+## 🤝 Contributing
+
+Found something worth tracking? Share it by [creating an issue](https://github.com/sercandumansiz/claude-code-template/issues/new) with:
+
+- **Title:** `track: <URL>`
+- **Body:** Optional notes or context
+
+The repository owner will review and run the pipeline if relevant.
