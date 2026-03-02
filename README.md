@@ -26,7 +26,6 @@ starter-template/
 ├── CLAUDE.md                  Project instructions
 ├── CLAUDE.local.md            Personal overrides
 ├── .mcp.json                  MCP server connections
-├── gitignore                  Gitignore template
 └── .claude/
     ├── settings.json          Permissions and environment
     ├── settings.local.json    Personal permission overrides
@@ -44,10 +43,9 @@ starter-template/
 | [`.claude/agents/`](starter-template/.claude/agents/) | Subagent template with all configuration options documented |
 | [`.mcp.json`](starter-template/.mcp.json) | MCP server configuration for connecting external tools |
 | [`.claude/hooks/`](starter-template/.claude/hooks/) | Hook script template with event list and common patterns |
-| [`.claude/settings.json`](starter-template/.claude/settings.json) | Shared permissions, hooks, and environment variables |
+| [`.claude/settings.json`](starter-template/.claude/settings.json) | Shared permissions, hooks, and environment variables. TypeScript LSP plugin is included (`"enabledPlugins": {"typescript-lsp@claude-plugins-official": true}`) and can be configured ([docs](https://code.claude.com/docs/en/discover-plugins#code-intelligence)). Auto memory is enabled by default (`"autoMemoryEnabled": true`) and can be configured ([docs](https://code.claude.com/docs/en/memory#storage-location)). |
 | [`CLAUDE.local.md`](starter-template/CLAUDE.local.md) | Personal project overrides |
 | [`.claude/settings.local.json`](starter-template/.claude/settings.local.json) | Personal permission overrides |
-| [`gitignore`](starter-template/gitignore) | Gitignore template (copy as `.gitignore`) |
 
 ## Configuration Levels
 
