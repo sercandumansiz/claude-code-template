@@ -4,6 +4,16 @@ This repository provides a starter template for configuring Claude Code with wel
 
 This project serves as both a Proof of Concept and a [Living Reference](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#living-reference). It uses the same [`starter-template/`](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#starter-template) configuration as its own operational setup. An automated ♻️ [pipeline](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#pipeline) continuously evaluates improvements and best practices, updating the template to maintain alignment with current standards. The agents continuously reference [official sources](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#official-sources) to ensure the template stays accurate and up to date.
 
+## Quickstart
+
+Copy the starter template into your project.
+
+```bash
+cp -rn starter-template/. your-project/
+```
+
+The `-n` flag skips existing files, so you can re-run this safely after template updates to pick up new files.
+
 ## Building Blocks
 
 | Block | What It Does | Reliability | Eval | Docs |
