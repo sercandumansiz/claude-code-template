@@ -6,7 +6,7 @@ A starter template for extending [Claude Code](https://code.claude.com/docs). Co
 
 | Block | What It Does | Docs |
 |-----------|-------------|------|
-| **CLAUDE.md** | Your project's instructions — loaded at the start of every session | [Docs](https://code.claude.com/docs/en/memory) |
+| **CLAUDE.md** | Your project's instructions. Loaded at the start of every session. | [Docs](https://code.claude.com/docs/en/memory) |
 | **Skills** | Teachable workflows and knowledge Claude can use or you can invoke | [Docs](https://code.claude.com/docs/en/skills) |
 | **Memory** | Knowledge Claude saves for itself and recalls across sessions | [Docs](https://code.claude.com/docs/en/memory) |
 | **Rules** | Guidelines that apply automatically when Claude works with matching files | [Docs](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
@@ -19,7 +19,7 @@ A starter template for extending [Claude Code](https://code.claude.com/docs). Co
 
 ## Starter Template
 
-Every file includes inline guidance — open and extend for your project.
+Every file includes inline guidance. Open and extend for your project.
 
 ```
 starter-template/
@@ -49,7 +49,7 @@ starter-template/
 
 ## Configuration Levels
 
-Claude Code supports 4 levels — higher levels override lower ones, arrays are merged:
+Claude Code supports 4 levels. Higher levels override lower ones, arrays are merged:
 
 | Level | Location | Shared? | Priority |
 |-------|----------|---------|----------|
@@ -68,22 +68,22 @@ This repository uses its own template. Root `.claude/` is this project's real co
 graph TB
   subgraph Trigger
     direction LR
-    I[GitHub Issue — track: URL]
-    C[Copilot — @claude mention]
+    I[GitHub Issue: track URL]
+    C[Copilot: @claude mention]
     R[Claude Remote Control]
   end
 
   subgraph Agentic Workflow
     direction LR
-    SA[source-analyzer — fetch and audit]
-    EV[evaluator — assess and decide]
-    TU[template-updater — apply changes]
+    SA[source-analyzer: fetch and audit]
+    EV[evaluator: assess and decide]
+    TU[template-updater: apply changes]
   end
 
   subgraph Output
     direction LR
     AP[approved.md + PR created]
-    RJ[rejected.md — reason logged]
+    RJ[rejected.md: reason logged]
     _[ ]
   end
 
