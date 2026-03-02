@@ -2,7 +2,7 @@
 
 This repository provides a starter template for configuring Claude Code with well-structured [building blocks](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#building-blocks). The [`starter-template/`](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#starter-template) directory contains ready-to-use configuration files that you can copy into your projects.
 
-This project serves as both a Proof of Concept and a [Living Reference](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#living-reference). It uses the same [`starter-template/`](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#starter-template) configuration as its own operational setup. An automated [pipeline](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#pipeline) continuously evaluates improvements and best practices, updating the template to maintain alignment with current standards. The agents continuously reference [official sources](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#official-sources) to ensure the template stays accurate and up to date.
+This project serves as both a Proof of Concept and a [Living Reference](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#living-reference). It uses the same [`starter-template/`](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#starter-template) configuration as its own operational setup. An automated ♻️ [pipeline](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#pipeline) continuously evaluates improvements and best practices, updating the template to maintain alignment with current standards. The agents continuously reference [official sources](https://github.com/sercandumansiz/claude-code-template?tab=readme-ov-file#official-sources) to ensure the template stays accurate and up to date.
 
 ## Building Blocks
 
@@ -45,13 +45,13 @@ starter-template/
 | [`.claude/agents/`](starter-template/.claude/agents/) | Subagent template with all configuration options documented |
 | [`.mcp.json`](starter-template/.mcp.json) | MCP server configuration for connecting external tools |
 | [`.claude/hooks/`](starter-template/.claude/hooks/) | Hook script template with event list and common patterns |
-| [`.claude/settings.json`](starter-template/.claude/settings.json) | Shared permissions, hooks, and environment variables. TypeScript LSP plugin is included (`"enabledPlugins": {"typescript-lsp@claude-plugins-official": true}`) and can be configured ([docs](https://code.claude.com/docs/en/discover-plugins#code-intelligence)). Auto memory is enabled by default (`"autoMemoryEnabled": true`) and can be configured ([docs](https://code.claude.com/docs/en/memory#storage-location)). |
+| [`.claude/settings.json`](starter-template/.claude/settings.json) | 🌟 Shared permissions, hooks, and environment variables. TypeScript LSP plugin is included (`"enabledPlugins": {"typescript-lsp@claude-plugins-official": true}`) and can be configured ([docs](https://code.claude.com/docs/en/discover-plugins#code-intelligence)). Auto memory is enabled by default (`"autoMemoryEnabled": true`) and can be configured ([docs](https://code.claude.com/docs/en/memory#storage-location)). |
 | [`CLAUDE.local.md`](starter-template/CLAUDE.local.md) | Personal project overrides |
 | [`.claude/settings.local.json`](starter-template/.claude/settings.local.json) | Personal permission overrides |
 
-## Configuration Levels
+## 📌 Configuration Levels
 
-Claude Code supports 4 levels. Higher levels override lower ones, arrays are merged:
+Claude Code supports 4 levels. Higher levels override lower ones.
 
 | Level | Location | Shared? | Priority |
 |-------|----------|---------|----------|
@@ -60,7 +60,7 @@ Claude Code supports 4 levels. Higher levels override lower ones, arrays are mer
 | **Project** | `.claude/` in repo | Yes (git) | Medium |
 | **User** | `~/.claude/` | You only | Base |
 
-## Living Reference
+## 🌱 Living Reference
 
 This repository uses its own template. Root `.claude/` is this project's real config; `starter-template/` is the generic template you copy.
 
@@ -118,7 +118,7 @@ Pipeline decisions are logged in [`agentic-workflow-output/`](agentic-workflow-o
 | [`approved.md`](agentic-workflow-output/approved.md) | Implemented updates with PR links | Main session, after template-updater completes |
 | [`rejected.md`](agentic-workflow-output/rejected.md) | Skipped or on-hold updates with reasons | Main session, after evaluator decides |
 
-## Official Sources
+## 🔖 Official Sources
 
 Built from the official Claude Code documentation:
 
