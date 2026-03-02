@@ -120,7 +120,7 @@ Pipeline decisions are logged in [`agentic-workflow-output/`](agentic-workflow-o
 
 ## 🔖 Official Sources
 
-Built from the official Claude Code documentation:
+Built from the official Claude Code documentation.
 
 - [Claude Code Docs](https://code.claude.com/docs)
 - [Best Practices](https://code.claude.com/docs/en/best-practices)
@@ -130,7 +130,7 @@ Built from the official Claude Code documentation:
 
 ## Contributing
 
-Found something worth tracking? Share it by [creating an issue](https://github.com/sercandumansiz/claude-code-template/issues/new) with:
+Found something worth tracking? Share it by [creating an issue](https://github.com/sercandumansiz/claude-code-template/issues/new) with,
 
 - **Title:** `track: <URL>`
 - **Body:** Optional notes or context
