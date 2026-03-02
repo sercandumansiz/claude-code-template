@@ -6,18 +6,20 @@ This project serves as both a Proof of Concept and a [Living Reference](https://
 
 ## Building Blocks
 
-| Block | What It Does | Docs |
-|-----------|-------------|------|
-| **CLAUDE.md** | Your project's instructions. Loaded at the start of every session. | [Docs](https://code.claude.com/docs/en/memory) |
-| **Skills** | Teachable workflows and knowledge Claude can use or you can invoke | [Docs](https://code.claude.com/docs/en/skills) |
-| **Memory** | Knowledge Claude saves for itself and recalls across sessions | [Docs](https://code.claude.com/docs/en/memory) |
-| **Rules** | Guidelines that apply automatically when Claude works with matching files | [Docs](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
-| **Agent Teams** | Multiple Claude instances working together on shared tasks | [Docs](https://code.claude.com/docs/en/agent-teams) |
-| **Subagents** | Specialized helpers that run independently and report back | [Docs](https://code.claude.com/docs/en/sub-agents) |
-| **MCP** | Connections to external tools and services | [Docs](https://code.claude.com/docs/en/mcp) |
-| **Hooks** | Scripts that run automatically at specific moments in Claude's workflow | [Docs](https://code.claude.com/docs/en/hooks) |
-| **Settings** | Permissions, environment variables, and plugin configuration | [Docs](https://code.claude.com/docs/en/settings) |
-| **Plugins** | Add-ons like language server support for code intelligence | [Docs](https://code.claude.com/docs/en/discover-plugins) |
+| Block | What It Does | Reliability | Eval | Docs |
+|-----------|-------------|-------------|------|------|
+| **CLAUDE.md** | Your project instructions. Claude reads them at the start of every session. | Always read. Instructions are advisory, not enforced. | 4/4 | [Docs](https://code.claude.com/docs/en/memory) |
+| **Hooks** | Scripts that run before or after Claude uses a tool. Can block dangerous actions. | Always executed. Blocking decisions are enforced. | 24/24 | [Docs](https://code.claude.com/docs/en/hooks) |
+| **Settings** | Controls what Claude can and cannot do. Permissions and environment. | Always applied. Deny rules are enforced. | 2/2 | [Docs](https://code.claude.com/docs/en/settings) |
+| **Rules** | Instructions for specific file types. Load automatically when files match. | Always read. Same as CLAUDE.md: advisory, not enforced. | - | [Docs](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
+| **Skills** | Reusable workflows. Trigger with `/command` or let Claude decide. | `/command` always works. Claude may skip auto-trigger. | 2/2 | [Docs](https://code.claude.com/docs/en/skills) |
+| **Memory** | Knowledge Claude saves and recalls across sessions. | File loading is reliable. Auto-save depends on Claude's judgment. | - | [Docs](https://code.claude.com/docs/en/memory) |
+| **Subagents** | Helper agents that handle tasks independently and report back. | Reliable for most tasks. | - | [Docs](https://code.claude.com/docs/en/sub-agents) |
+| **MCP** | Connects Claude to external tools and services. | Local tools connect reliably. Remote tools may disconnect. | - | [Docs](https://code.claude.com/docs/en/mcp) |
+| **Agent Teams** | Multiple Claude agents working together on shared tasks. | Experimental. Not enabled by default. | - | [Docs](https://code.claude.com/docs/en/agent-teams) |
+| **Plugins** | Add-ons like code intelligence for your programming language. | Code intelligence is stable. Others vary. | - | [Docs](https://code.claude.com/docs/en/discover-plugins) |
+
+> **Eval** column shows results from our [eval suite](evals/README.md). Hook tests are deterministic. LLM evals are single-run and results may vary. **Reliability** is based on official docs and community reports (March 2026).
 
 ## Starter Template
 

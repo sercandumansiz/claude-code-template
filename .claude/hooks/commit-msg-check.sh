@@ -29,7 +29,7 @@ fi
 # Only check git commit commands
 if echo "$COMMAND" | grep -qE '^git commit'; then
   # Extract commit message from -m flag (handles both single and double quotes)
-  MSG=$(echo "$COMMAND" | sed -n 's/.*-m[[:space:]]*["\x27]\([^"\x27]*\)["\x27].*/\1/p')
+  MSG=$(echo "$COMMAND" | sed -n "s/.*-m[[:space:]]*[\"']\([^\"']*\)[\"'].*/\1/p")
 
   if [ -n "$MSG" ] && ! echo "$MSG" | grep -qE '^(feat|fix|docs|style|refactor|test|chore|perf)(\(.+\))?: .+'; then
     jq -n '{

@@ -24,6 +24,13 @@ CLAUDE.local.md
 .claude/worktrees/
 
 # ==============================================
+# Eval Suite (test files and generated output)
+# ==============================================
+evals/challenges/
+evals/results/
+evals/*.sh
+
+# ==============================================
 # Environment & Secrets
 # ==============================================
 .env
