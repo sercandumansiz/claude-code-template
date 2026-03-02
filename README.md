@@ -1,6 +1,8 @@
 # Claude Code Template
 
-A starter template for extending [Claude Code](https://code.claude.com/docs). Copy `starter-template/` into your project and start working with a well-structured Claude.
+This repository provides a starter template for configuring Claude Code with well-structured project instructions, skills, rules, agents, and hooks. The `starter-template/` directory contains ready-to-use configuration files that you can copy into your projects.
+
+This project serves as both a Proof of Concept and a Living Reference. It uses the same `starter-template/` configuration as its own operational setup. An automated pipeline continuously evaluates improvements and best practices, updating the template to maintain alignment with current standards.
 
 ## Building Blocks
 
