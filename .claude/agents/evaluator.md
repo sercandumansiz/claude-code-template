@@ -2,7 +2,7 @@
 name: evaluator
 description: Evaluates source analysis findings against current project state. Benchmarks, compares, and decides whether to implement updates. Use after source-analyzer completes its analysis.
 tools: WebFetch, WebSearch, Read, Grep, Glob
-model: sonnet
+model: opus
 maxTurns: 15
 memory: local
 ---
