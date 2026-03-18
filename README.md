@@ -72,6 +72,14 @@ Claude Code supports 4 levels. Higher levels override lower ones.
 | **Project** | `.claude/` in repo | Yes (git) | Medium |
 | **User** | `~/.claude/` | You only | Base |
 
+## 🧩 Context Engineering
+
+| Tool | Description |
+|------|-------------|
+| [Context7](https://context7.com/) | Up-to-date, version-specific library documentation for AI coding tools |
+
+> For a deeper dive, see [Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) by Martin Fowler.
+
 ## 🌱 Living Reference
 
 This repository uses its own template. Root `.claude/` is this project's real config; `starter-template/` is the generic template you copy.
