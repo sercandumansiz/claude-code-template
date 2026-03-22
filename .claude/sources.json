@@ -32,14 +32,6 @@
       "notes": "Official Claude AI announcements"
     },
     {
-      "id": "claude-code-log-x",
-      "name": "Claude Code Changelog (X)",
-      "url": "https://x.com/ClaudeCodeLog",
-      "strategy": "search",
-      "searchQuery": "from:ClaudeCodeLog",
-      "notes": "Claude Code changelog and release notes"
-    },
-    {
       "id": "best-practice-repo",
       "name": "Claude Code Best Practice (GitHub)",
       "url": "https://github.com/shanraisshan/claude-code-best-practice",
