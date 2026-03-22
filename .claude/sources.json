@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "sources": [
+    {
+      "id": "hacker-news",
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "strategy": "search",
+      "searchQuery": "\"Claude Code\" site:news.ycombinator.com",
+      "notes": "Claude Code related posts from the last 24 hours"
+    },
+    {
+      "id": "thoughtworks-blog",
+      "name": "ThoughtWorks Insights",
+      "url": "https://www.thoughtworks.com/insights/blog",
+      "strategy": "fetch",
+      "notes": "New posts about AI coding agents or Claude Code"
+    },
+    {
+      "id": "martin-fowler",
+      "name": "Martin Fowler",
+      "url": "https://martinfowler.com/recent-changes.html",
+      "strategy": "fetch",
+      "notes": "New articles on context engineering or AI coding"
+    },
+    {
+      "id": "claude-ai-x",
+      "name": "Claude AI (X)",
+      "url": "https://x.com/claudeai",
+      "strategy": "search",
+      "searchQuery": "from:claudeai Claude Code",
+      "notes": "Official Claude AI announcements"
+    },
+    {
+      "id": "claude-code-log-x",
+      "name": "Claude Code Changelog (X)",
+      "url": "https://x.com/ClaudeCodeLog",
+      "strategy": "search",
+      "searchQuery": "from:ClaudeCodeLog",
+      "notes": "Claude Code changelog and release notes"
+    },
+    {
+      "id": "best-practice-repo",
+      "name": "Claude Code Best Practice (GitHub)",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "strategy": "fetch",
+      "notes": "Community best practices. Check for new commits or significant changes"
+    }
+  ]
+}

@@ -93,6 +93,7 @@ graph TB
     I[GitHub Issue: track URL]
     C[Copilot: @claude mention]
     R[Claude Remote Control]
+    S[Scheduled: daily source scan]
   end
 
   subgraph Agentic Workflow
@@ -112,6 +113,7 @@ graph TB
   I --> SA
   C --> SA
   R --> SA
+  S --> SA
   SA --> EV
   EV -->|implement| TU
   EV -->|on hold| RJ
@@ -124,7 +126,7 @@ graph TB
   classDef rejected fill:#fee2e2,stroke:#ef4444,color:#7f1d1d
   classDef hidden fill:none,stroke:none,color:transparent
 
-  class I,C,R trigger
+  class I,C,R,S trigger
   class SA,EV,TU workflow
   class AP approved
   class RJ rejected

@@ -33,6 +33,7 @@ This project itself uses its own template (dogfooding) — the root `.claude/` i
 
 - `starter-template/` — Generic template files users copy to their projects
 - `.claude/` — This project's own Claude Code configuration (dogfooding example)
+- `.claude/sources.json` — External source registry for `/scan-sources`. Defines which URLs to scan and how (fetch vs search).
 - `.github/workflows/` — GitHub Actions for remote triggers (track-update pipeline, Copilot @claude)
 - `agentic-workflow-output/` — Pipeline decision logs (`approved.md` and `rejected.md`). Written by the main session after `/track-update` runs. Append-only — never delete entries.
 
