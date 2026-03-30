@@ -72,6 +72,17 @@ Claude Code supports 4 levels. Higher levels override lower ones.
 | **Project** | `.claude/` in repo | Yes (git) | Medium |
 | **User** | `~/.claude/` | You only | Base |
 
+## 💾 Memory & Configuration Guide
+
+Comprehensive guide covering:
+- **Directory Structure** — Project vs user level (`.claude/` vs `~/.claude/`)
+- **CLAUDE.md vs Rules vs Memory** — Three distinct systems and when to use each
+- **Auto Memory (MEMORY.md)** — Claude's automatic learning system
+- **Modular Rules** — Organizing instructions with `.claude/rules/`
+- **Hierarchical Loading** — Multiple CLAUDE.md files in monorepos
+
+**[Read the full Memory & Configuration Guide →](docs/MEMORY_GUIDE.md)**
+
 ## 🧩 Context Engineering
 
 | Tool | Description |
